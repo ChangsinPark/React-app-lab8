@@ -13,7 +13,6 @@ const Movie = ({name, link, className, checked})=> {
     }
 };
 
-
 export const StyledMovie = styled(Movie)`
 background-color: wheat;
 font-weight: bold;
