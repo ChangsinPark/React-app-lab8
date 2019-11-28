@@ -1,6 +1,7 @@
-import Styledtitle from './Title';
-import StyledMovie from './Movie';
+import React from 'react';
 import styled from 'styled-components';
+import StyledTitle from './Title';
+import StyledMovie from './Movie';
 
 		//	Class Stateful Components
         class MovieList extends React.Component {
@@ -50,6 +51,5 @@ export const StyledMovieList = styled(MovieList)`
 		box-shadow: 0px 0px 5px gray;
 		padding: 10px;
 		`;
-
 
 export default StyledMovieList;

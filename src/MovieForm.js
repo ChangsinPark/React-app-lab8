@@ -1,6 +1,8 @@
+import React from 'react';
 import styled from 'styled-components';
-import {StyledInput, StyledForm} from '/src/Styled.js';
-import StyledMovieList from './MovieList';
+import StyledMovieList from './MovieList.js';
+import {StyledInput, StyledForm} from './Styled.js';
+
 
 	//block body ES6 Arrow Anonymous Function = Stateful Component with React Hooks
 	const MovieForm = () => {
@@ -89,10 +91,6 @@ import StyledMovieList from './MovieList';
 
     }
     
-    const StyledMovieList = styled(MovieList)`
-    background-color: papayawhip;
-    box-shadow: 0px 0px 5px gray;
-    padding: 10px;
-    `;
+
 
     export default MovieForm;

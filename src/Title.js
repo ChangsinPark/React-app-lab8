@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import{StyledHeading1, StyledHeading3} from '/src/Styled.js';
+import{StyledHeading1, StyledHeading3} from './Styled.js';
 
 const Title = ({className})=> (
     <div className={className}>
