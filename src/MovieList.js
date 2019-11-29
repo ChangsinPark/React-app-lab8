@@ -3,11 +3,8 @@ import styled from 'styled-components';
 import StyledTitle from './Title';
 import StyledMovie from './Movie';
 
-		//	Stateless Function Components
-        const MovieList = ({className, movies}) => {
-            
-    
-            render() {
+		//	Stateless Function Component
+     const MovieList = ({ className, movies }) =>{
                 return (
                     <div className = {this.props.className}>
                     <StyledTitle/>
@@ -18,9 +15,7 @@ import StyledMovie from './Movie';
                     </ol>
                     </div>
                 );
-            }
-    
-        }
+        };
 
 export const StyledMovieList = styled(MovieList)`
 		background-color: papayawhip;
