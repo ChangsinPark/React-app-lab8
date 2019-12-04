@@ -1,19 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
-import StyledMovieList from './MovieList.js';
 import {StyledInput, StyledForm} from './Styled.js';
+import {useHistory} from 'react-router-dom';
+
 
 
 //block body ES6 Arrow Anonymous Function = Stateful Component with React Hooks
 const MovieForm = ({movies, checkboxGroup, handleCheckboxCallback, handleFormCallback}) => {
+	let history = useHistory();
 
 	//event handler for the submit button
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		handleFormCallback();
+		history.push('/results');
 	}
-
-
+			
 		
 		let enableSubmit = false;
 		for (const checked of (checkboxGroup)) {

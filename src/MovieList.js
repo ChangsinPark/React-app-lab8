@@ -2,18 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import StyledTitle from './Title';
 import StyledMovie from './Movie';
+import {Link} from 'react-router-dom';
 
 		//	Stateless Function Component
      const MovieList = ({ className, movies }) =>{
                 return (
-                    <div className = {this.props.className}>
+                    <div className = {className}>
                     <StyledTitle/>
                     <ol>
-                     {this.state.movies.map(movie => (
+                     {movies.map(movie => (
                         <StyledMovie key={movie.id} name={movie.name} color={movie.color} link={movie.link} {...movie} />
                         ))}
                     </ol>
+                    <Link to="/">Back to Form</Link>
                     </div>
+                    
                 );
         };
 
