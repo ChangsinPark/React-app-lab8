@@ -12,21 +12,21 @@
       "name": "The Matrix Reloaded",
       "link": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded",
       "color": "palevioletred",
-      "checked": true
+      "checked": false
     },
     {
       "id": 2,
       "name": "The Matrix Revolustions",
       "link": "https://en.wikipedia.org/wiki/The_Matrix_Revolutions",
       "color": "olive",
-      "checked": true
+      "checked": false
     },
     {
       "id": 3,
       "name": "Avengers: Endgame",
       "link": "https://en.wikipedia.org/wiki/Avengers:_Endgame",
       "color": "olive",
-      "checked": true
+      "checked": false
     }
   ]
 }
