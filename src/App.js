@@ -21,7 +21,7 @@ componentDidMount() {
   (async () => {
     try {
       // Make an API Request and store the Response
-      const response = await fetch('http://192.168.127.1:3004/movies');
+      const response = await fetch('http://10.21.75.82:3004/movies');
       // This is for HTTP Errors, not Networking Errors
       if (!response.ok) throw Error(response.status + ': ' + response.statusText);
       // extract the JSON from the body of the Response
@@ -42,7 +42,7 @@ componentDidUpdate( prevProps, prevState ) {
     (async () => {
       try {
         // Make an API Request and store the Response
-        const response = await fetch('http://192.168.127.1:3004/movies');
+        const response = await fetch('http://10.21.75.82:3004/movies');
         // This is for HTTP Errors, not Networking Errors
         if (!response.ok) throw Error(response.status + ': ' + response.statusText);
         // extract the JSON from the body of the Response
@@ -75,7 +75,7 @@ componentDidUpdate( prevProps, prevState ) {
 		(async () => {
 			//fetch call
 		try{
-			const response = await fetch(`http://192.168.127.1:3004/movies/${i}`, {
+			const response = await fetch(`http://10.21.75.82:3004/movies/${i}`, {
 				method: 'PATCH',
 				headers: {
 					'Content-Type': 'application/json'
